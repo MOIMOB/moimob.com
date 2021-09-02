@@ -33,23 +33,23 @@ const MetaTags = () => {
                                 </script>
                             )
                         }
-                        <title>Portfolio of {profile.name}</title>
+                        <title>{config.github.username}</title>
                         <meta name="theme-color" content={isThemeDarkish(theme) ? '#000000' : '#ffffff'}/>
 
                         <meta name="description" content={profile.bio} />
 
-                        <meta itemprop="name" content={`Portfolio of ${profile.name}`} />
+                        <meta itemprop="name" content={config.github.username} />
                         <meta itemprop="description" content={profile.bio} />
                         <meta itemprop="image" content={profile.avatar} />
 
                         <meta property="og:url" content={typeof config.social.website !== 'undefined' ? config.social.website : ''} />
                         <meta property="og:type" content="website" />
-                        <meta property="og:title" content={`Portfolio of ${profile.name}`} />
+                        <meta property="og:title" content={config.github.username} />
                         <meta property="og:description" content={profile.bio} />
                         <meta property="og:image" content={profile.avatar} />
 
                         <meta name="twitter:card" content="summary_large_image" />
-                        <meta name="twitter:title" content={`Portfolio of ${profile.name}`} />
+                        <meta name="twitter:title" content={config.github.username} />
                         <meta name="twitter:description" content={profile.bio} />
                         <meta name="twitter:image" content={profile.avatar} />
                     </Helmet>

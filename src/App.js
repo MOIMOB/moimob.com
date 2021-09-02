@@ -10,12 +10,11 @@ import { setLoading } from "./store/slices/loadingSlice";
 import { setProfile } from "./store/slices/profileSlice";
 import Details from "./components/Details";
 import Skill from "./components/Skill";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
 import Project from "./components/Project";
 import { setRepo } from "./store/slices/repoSlice";
 import Blog from "./components/Blog";
 import MetaTags from "./components/MetaTags";
+import MobileApp from "./components/MobileApp";
 
 function App() {
     const dispatch = useDispatch();
@@ -31,16 +30,16 @@ function App() {
     }, [theme])
 
     const loadData = useCallback(() => {
-        axios.get(`https://api.github.com/users/${config.github.username}`)
+        axios.get(`https://api.github.com/orgs/${config.github.username}`)
         .then(response => {
             let data = response.data;
 
             let profileData = {
                 avatar: data.avatar_url,
-                name: data.name ? data.name : '',
-                bio: data.bio ? data.bio : '',
-                location: data.location ? data.location : '',
-                company: data.company ? data.company : ''
+                name: data.login ? data.login : '',
+                bio: data.description ? data.description : '',
+                location: '',
+                company: ''
             }
 
             dispatch(setProfile(profileData));
@@ -52,7 +51,7 @@ function App() {
                 excludeRepo += `+-repo:${config.github.username}/${project}`;
             });
 
-            let query = `user:${config.github.username}+fork:${!config.github.exclude.forks}${excludeRepo}`;
+            let query = `org:${config.github.username}+fork:${!config.github.exclude.forks}${excludeRepo}`;
 
             let url = `https://api.github.com/search/repositories?q=${query}&sort=${config.github.sortBy}&per_page=${config.github.limit}&type=Repositories`;
 
@@ -150,12 +149,11 @@ function App() {
                                             <AvatarCard />
                                             <Details />
                                             <Skill />
-                                            <Experience />
-                                            <Education />
                                         </div>
                                     </div>
                                     <div className="lg:col-span-2 col-span-1">
                                         <div className="grid grid-cols-1 gap-6">
+                                            <MobileApp />
                                             <Project />
                                             <Blog />
                                         </div>

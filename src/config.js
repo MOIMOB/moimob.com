@@ -1,7 +1,8 @@
 // config.js
-module.exports = {
+import billIcon from './images/bill_icon.png';
+const config = {
     github: {
-        username: 'arifszn', // Your GitHub org/user name. (Required)
+        username: 'MOIMOB', // Your GitHub org/user name. (Required)
         sortBy: 'stars', // stars | updated
         limit: 8, // How many projects to display.
         exclude: {
@@ -10,77 +11,49 @@ module.exports = {
         }
     },
     social: {
-        linkedin: 'ariful-alam',
-        twitter: 'arif_swozon',
+        linkedin: '',
+        twitter: '',
         facebook: '',
         dribbble: '',
         behance: '',
         medium: '',
         devto: '',
-        website: 'https://arifszn.github.io',
-        email: 'contact@arifszn.com'
+        website: 'https://moimob.com',
+        email: 'contact@moimob.com'
     },
     skills: [
-        'PHP',
-        'Laravel',
-        'JavaScript',
-        'React.js',
-        'Vue.js',
+        'Typescript',
+        'Javascript',
+        'Aurelia',
         'Node.js',
-        'Jquery',
-        'MySQL',
+        'Bulma',
         'Git',
-        'CSS',
-        'Antd',
-        'Tailwind',
-        'Bootstrap',
+        'SCSS',
+        'React',
+        'Cordova',
+        'Capacitor',
+        'Android'
     ],
-    experiences: [
-        { 
-            company: 'Orangetoolz - My Offer 360 Degree',
-            position: 'Jr. Full Stack Engineer',
-            from: 'July 2019',
-            to: 'August 2021'
-        },
-        { 
-            company: 'Techvillage',
-            position: 'Jr. Software Engineer',
-            from: 'January 2019',
-            to: ' June 2019'
+    apps: [
+        {
+            name: 'Monthly Bill Planner',
+            description: 'Monthly Bill Planner is an app that will let you organize your bills and income. It will also help you calculate how much money is left over each month.',
+            icon: billIcon,
+            html_url: 'https://play.google.com/store/apps/details?id=com.moimob.billplanner'
         }
     ],
-    education: [
-        { 
-            institution: 'American International University-Bangladesh',
-            degree: 'Bachelor of Science',
-            from: '2015',
-            to: '2019'
-        },
-        { 
-            institution: 'Cantonment College, Jessore',
-            degree: 'Higher Secondary Certificate (HSC)',
-            from: '2012',
-            to: '2014',
-        },
-        { 
-            institution: 'Chowgacha Shahadat Pilot High School',
-            degree: 'Secondary School Certificate (SSC)',
-            from: '2007',
-            to: '2012'
-        }
-    ],
-    blog: {
-        // Display blog posts from your medium or dev.to account. (Optional)
-        source: 'dev.to', // medium | dev.to
-        username: 'arifszn',
-        limit: 3 // How many posts to display. Max is 10.
-    },
+    // blog: {
+    //     // Display blog posts from your medium or dev.to account. (Optional)
+    //     source: 'dev.to', // medium | dev.to
+    //     username: 'arifszn',
+    //     limit: 3 // How many posts to display. Max is 10.
+    // },
     googleAnalytics: {
         // GA3 tracking id/GA4 tag id
         id: '' // UA-XXXXXXXXX-X | G-XXXXXXXXXX
     },
     themeConfig: {
-        default: 'light',
+        default: 'emerald',
 
         // Hides the switch in the navbar
         // Useful if you want to support a single color mode
@@ -116,3 +89,4 @@ module.exports = {
         ]
     }
 }
+export default config

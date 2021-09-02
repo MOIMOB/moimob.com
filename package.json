@@ -1,14 +1,14 @@
 {
-    "name": "ezprofile",
+    "name": "moimob-website",
     "version": "1.0.0",
-    "description": "Kickstart your personal portfolio with Github Api and blog",
-    "homepage": "https://arifszn.github.io/ezprofile",
+    "description": "MOIMOB Website",
+    "homepage": "https://moimob.com",
     "private": true,
     "license": "Apache-2.0",
-    "author": "arifszn",
+    "author": "MOIMOB",
     "repository": {
         "type": "git",
-        "url": "https://github.com/arifszn/ezprofile.git"
+        "url": "https://github.com/MOIMOB/moimob.com"
     },
     "dependencies": {
         "@craco/craco": "^6.2.0",
@@ -34,10 +34,7 @@
     "scripts": {
         "start": "craco start",
         "build": "craco build",
-        "test": "craco test",
-        "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "test": "craco test"
     },
     "eslintConfig": {
         "extends": [
@@ -63,18 +60,5 @@
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
     },
     "keywords": [
-        "personal-site",
-        "template",
-        "portfolio",
-        "personal-website",
-        "portfolio-website",
-        "portfolio-site",
-        "portfolio-template",
-        "portfolio-page",
-        "developer-portfolio",
-        "portfolio-project",
-        "github-portfolio",
-        "react-portfolio",
-        "github-api"
     ]
 }

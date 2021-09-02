@@ -122,14 +122,14 @@ const Project = () => {
                                             <h5 className="card-title">
                                                 {
                                                     loading ? skeleton({ width: 'w-28', height: 'h-8' }) : (
-                                                        <span className="opacity-70">My Projects</span>
+                                                        <span className="opacity-70">Projects</span>
                                                     )
                                                 }
                                             </h5>
                                             {
                                                 loading ? skeleton({ width: 'w-10', height: 'h-5' }) : (
                                                     <a
-                                                        href={`https://github.com/${config.github.username}?tab=repositories`}
+                                                        href={`https://github.com/orgs/${config.github.username}/repositories`}
                                                         target="_blank"
                                                         rel="noreferrer"
                                                         className="opacity-50"
