@@ -6,6 +6,8 @@ import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 import { store } from './store/store';
 import { HelmetProvider } from 'react-helmet-async';
+import { hotjar } from 'react-hotjar'
+import config from './config';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -18,4 +20,5 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
+hotjar.initialize(config.hotjar.id, config.hotjar.snippetVersion);
 reportWebVitals();

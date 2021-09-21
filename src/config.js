@@ -52,6 +52,10 @@ const config = {
         // GA3 tracking id/GA4 tag id
         id: '' // UA-XXXXXXXXX-X | G-XXXXXXXXXX
     },
+    hotjar: {
+        id: 2614710,
+        snippetVersion : 6
+    },
     themeConfig: {
         default: 'emerald',
 
