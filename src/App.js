@@ -15,6 +15,7 @@ import { setRepo } from "./store/slices/repoSlice";
 import Blog from "./components/Blog";
 import MetaTags from "./components/MetaTags";
 import MobileApp from "./components/MobileApp";
+import Features from './components/Features';
 
 function App() {
     const dispatch = useDispatch();
@@ -149,6 +150,7 @@ function App() {
                                             <AvatarCard />
                                             <Details />
                                             <Skill />
+                                            <Features />
                                         </div>
                                     </div>
                                     <div className="lg:col-span-2 col-span-1">
