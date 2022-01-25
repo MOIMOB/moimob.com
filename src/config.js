@@ -1,5 +1,6 @@
 // config.js
 import billIcon from './images/bill_icon.png';
+import shutTheBoxIcon from './images/shutthebox-icon.png';
 const config = {
     github: {
         username: 'MOIMOB', // Your GitHub org/user name. (Required)
@@ -40,7 +41,13 @@ const config = {
             description: 'Monthly Bill Planner is an app that will let you organize your bills and income. It will also help you calculate how much money is left over each month.',
             icon: billIcon,
             html_url: 'https://play.google.com/store/apps/details?id=com.moimob.billplanner'
-        }
+        },
+        {
+            name: 'Shut the Box',
+            description: 'Shut the box, also called canoga, batten down the hatches or trick-track is a fun and simple game of dice. The goal is to close the tiles with the numbers 1-9, if you succeed you have shut the box and won the game.',
+            icon: shutTheBoxIcon,
+            html_url: 'https://play.google.com/store/apps/details?id=com.moimob.shutthebox'
+        },
     ],
     // blog: {
     //     // Display blog posts from your medium or dev.to account. (Optional)
