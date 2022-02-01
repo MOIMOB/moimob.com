@@ -15,7 +15,7 @@
         "@reduxjs/toolkit": "1.7.1",
         "@testing-library/jest-dom": "5.16.1",
         "@testing-library/react": "12.1.2",
-        "@testing-library/user-event": "12.8.3",
+        "@testing-library/user-event": "13.5.0",
         "article-api": "1.0.8",
         "axios": "0.25.0",
         "daisyui": "1.25.4",
