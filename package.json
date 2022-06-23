@@ -18,7 +18,7 @@
         "@testing-library/user-event": "13.5.0",
         "article-api": "1.0.8",
         "axios": "0.26.1",
-        "daisyui": "1.25.4",
+        "daisyui": "2.17.0",
         "gh-pages": "3.2.3",
         "moment": "2.29.1",
         "prop-types": "15.8.1",
