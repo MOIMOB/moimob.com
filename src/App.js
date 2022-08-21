@@ -12,7 +12,6 @@ import Details from "./components/Details";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
 import { setRepo } from "./store/slices/repoSlice";
-import Blog from "./components/Blog";
 import MetaTags from "./components/MetaTags";
 import MobileApp from "./components/MobileApp";
 import Features from './components/Features';
@@ -157,7 +156,6 @@ function App() {
                                         <div className="grid grid-cols-1 gap-6">
                                             <MobileApp />
                                             <Project />
-                                            <Blog />
                                         </div>
                                     </div>
                                 </div>
