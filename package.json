@@ -16,7 +16,6 @@
         "@testing-library/jest-dom": "5.16.2",
         "@testing-library/react": "12.1.4",
         "@testing-library/user-event": "13.5.0",
-        "article-api": "1.0.8",
         "axios": "0.26.1",
         "daisyui": "1.25.4",
         "gh-pages": "3.2.3",
