@@ -11,7 +11,7 @@
         "url": "https://github.com/MOIMOB/moimob.com"
     },
     "dependencies": {
-        "@craco/craco": "6.4.3",
+        "@craco/craco": "6.4.5",
         "@reduxjs/toolkit": "1.8.0",
         "@testing-library/jest-dom": "5.16.2",
         "@testing-library/react": "12.1.4",
