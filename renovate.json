@@ -1,3 +1,20 @@
 {
-  "extends": ["config:base", ":dependencyDashboard"]
+    "extends": [
+        "config:base"
+    ],
+    "packageRules": [
+        {
+            "matchPaths": ["+(package.json)"],
+            "matchPackagePatterns": [
+                "*"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "groupName": "all non-major dependencies",
+            "groupSlug": "all-minor-patch"
+        }
+    ],
+    "prConcurrentLimit": 5
 }
